@@ -6,3 +6,43 @@
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+button {
+  background: #4dd;
+  border-radius: 10px;
+  border: none;
+  font-size: large;
+  outline: none;
+  padding: 10px 15px;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px #888 solid;
+  font-size: large;
+  outline: none;
+  padding: 5px;
+}
+
+.app {
+  padding: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.ic button {
+  margin: 10px;
+}
+
+.ic button:disabled {
+  filter: grayscale(0.6);
+}
+
+.ic input {
+  margin: 10px;
+}
