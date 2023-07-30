@@ -1,6 +1,12 @@
-import InputController from "./components/InputController";
-import { topInputStore, bottomInputStore } from "./store";
 import { autorun } from "mobx";
+import ACController from "./components/ACController";
+import InputController from "./components/InputController";
+import {
+  topInputStore,
+  bottomInputStore,
+  topACStore,
+  bottomACStore,
+} from "./store";
 
 const App = () => {
   topInputStore.setData({
@@ -60,7 +66,15 @@ const App = () => {
     <div className="app">
       <div className="inputs">
         <InputController props={topInputStore} />
+        <hr />
         <InputController props={bottomInputStore} />
+      </div>
+      <hr />
+      <div className="autocompletes">
+        <ACController props={topACStore} />
+        <hr />
+        <ACController props={bottomACStore} />
+        <hr />
       </div>
     </div>
   );

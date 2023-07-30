@@ -1,12 +1,7 @@
 import { observer } from "mobx-react";
-import Button, { IButton } from "./Button";
-
-export interface IInputController {
-  value: string;
-  setValue?: (newValue: string) => void;
-  left: IButton[];
-  right: IButton[];
-}
+import Button from "./Button";
+import { IButton } from "../interface/IButton";
+import { IInputController } from "../interface/IInputController";
 
 const InputController = ({ props }: { props: IInputController }) => {
   const { value, setValue, left, right } = props;

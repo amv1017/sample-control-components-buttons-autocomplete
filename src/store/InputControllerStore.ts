@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
-import { IButton } from "../components/Button";
-import { IInputController } from "../components/InputController";
+import { IButton } from "../interface/IButton";
+import { IInputController } from "../interface/IInputController";
 
 class InputControllerStore implements IInputController {
   value: string = "";

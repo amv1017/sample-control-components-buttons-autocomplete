@@ -1,8 +1,4 @@
-export interface IButton {
-  text: string;
-  onClick(): void;
-  enabled?: boolean;
-}
+import { IButton } from "../interface/IButton";
 
 const Button = ({ text, onClick, enabled = true }: IButton) => (
   <button onClick={onClick} disabled={!enabled}>
